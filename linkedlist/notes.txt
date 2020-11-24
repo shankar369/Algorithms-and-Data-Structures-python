@@ -1,0 +1,5 @@
+Arrays vs linked list
+                      Arrays         Linkedlist
+insertion / deletion    o(n)           o(1)
+Access Element          o(1)           o(n)
+contiguours memory?     yes            no

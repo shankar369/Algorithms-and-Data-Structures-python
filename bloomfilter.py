@@ -5,9 +5,9 @@
     Deletion of element is not possible
 '''
 
-import pyhash
-fnv = pyhash.fnv1_32()
-murmur = pyhash.murmur3_32()
+# import pyhash
+# fnv = pyhash.fnv1_32()
+# murmur = pyhash.murmur3_32()
 
 bit_vector = [0] * 30
 
@@ -15,16 +15,16 @@ bit_vector = [0] * 30
 
 
 def insert_element(element):
-    fnv_elem_hash = fnv(element) % 30
-    murmur_elem_hash = murmur(element) % 30
+    fnv_elem_hash = hash(element) % 30
+    murmur_elem_hash = id(element) % 30
 
     bit_vector[fnv_elem_hash] = 1
     bit_vector[murmur_elem_hash] = 1
 
 
 def find(element):
-    fnv_elem_hash = fnv(element) % 30
-    murmur_elem_hash = murmur(element) % 30
+    fnv_elem_hash = hash(element) % 30
+    murmur_elem_hash = id(element) % 30
 
     if(bit_vector[fnv_elem_hash] == 1 and bit_vector[murmur_elem_hash] == 1):
         return True
