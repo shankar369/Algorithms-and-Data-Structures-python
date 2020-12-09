@@ -48,3 +48,13 @@ print(grid_traveller_memoizatoin(2, 3))  # 3
 print(grid_traveller_memoizatoin(3, 2))  # 3
 print(grid_traveller_memoizatoin(3, 3))  # 6
 print(grid_traveller_memoizatoin(18, 18))  # 2333606220
+
+
+'''
+time: 
+    bruteforce: O(2 ^ (n+m))
+    memoized: O(m*n)
+space : 
+    bruteforce: O(n+m)
+    memoized: O(n+m)
+'''

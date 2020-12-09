@@ -80,3 +80,12 @@ if(__name__ == "__main__"):
     print(can_sum_memoization(7, [2, 4]))  # false
     print(can_sum_memoization(8, [2, 3, 5], {}))  # true
     print(can_sum_memoization(300, [7, 14], {}))  # false
+
+
+'''
+time: 
+    bruteforce : O(n^m)
+    memoization : O(n*m)
+space:
+    O(m) for both
+'''

@@ -30,3 +30,13 @@ print(fib_memoization(6))
 print(fib_memoization(7))
 print(fib_memoization(8))
 print(fib_memoization(50))
+
+
+'''
+Time : 
+    bruteforce: O(2^n)
+    memoization : (n)
+space: 
+    bruteforce: O(n)
+    memoized : O(n)
+'''
