@@ -28,7 +28,9 @@ print(grid_traveller(3, 3))  # 6
 print("----------------memoization--------------------")
 
 
-def grid_traveller_memoizatoin(m, n, memo={}):
+def grid_traveller_memoizatoin(m, n, memo=None):
+    if(memo is None):
+        memo = {}
     key = str(m) + "," + str(n)
     if(key in memo):
         return memo[key]

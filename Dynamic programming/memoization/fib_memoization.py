@@ -15,7 +15,9 @@ print(fib(8))  # 21
 print("------------------memoization--------------")
 
 
-def fib_memoization(n, memo={}):
+def fib_memoization(n, memo=None):
+    if(memo is None):
+        memo = {}
     if(n in memo):
         return memo[n]
     if(n <= 2):
