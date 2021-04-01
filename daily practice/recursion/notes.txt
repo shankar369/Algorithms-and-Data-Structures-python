@@ -1,0 +1,16 @@
+useful links:
+ - https://www.byte-by-byte.com/recursion/#section1
+
+
+ Here are a couple questions you can ask yourself to decide whether you should solve a given problem recursively:
+
+ - Does the problem fit into one of our recursive patterns?
+    In the recursive patterns section, we will see 6 different common recursive patterns. One of the easiest ways to decide whether or not to use recursion is simply to consider if the problem fits into one of those patterns.
+ - Does the problem obviously break down into subproblems?
+    Many people define recursion as “solving a problem by breaking it into subproblems”. This is a perfectly valid definition, although the 6 recursive patterns get more precise. However, if you see a way to break a problem down into subproblems, then it can likely be solved easily using recursion.
+ - Could the problem be solved with an arbitrary number of nested for loops?
+    Have you ever tried to solve a problem where it would be easy to solve if you could have a number of nested for loops depending on the size of the input? For example, finding all N-digit numbers. We can’t do this with actual for loops, but we can do this with recursion. This is a good indicator that you might want to solve a problem recursively.
+ - Can you reframe the problem as a search problem?
+    Depth-first search, one of the patterns we will see, is incredibly flexible. It can be used to solve almost any recursive problem by reframing it as a search problem. If you see a problem that can be solved by searching, then you have a good recursive candidate.
+ - Is it easier to solve it recursively than iteratively?
+    At the end of the day, this is what it comes down to. Is it easier to solve the problem recursively than it is to solve it iteratively? We know that any problem can be solved either recursively or iteratively, so you just have to decide which is easier.
